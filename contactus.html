@@ -92,7 +92,63 @@
               <h3>Send us your Feedback</h3>
            </div>
             <div class="col-12 col-md-9">
-                Form goes here
+                <form>
+                    <div class="row form-group">
+                        <label for="firstname" class="col-12 col-md-2 col-form-label">First Name</label>
+                        <div class="col-12 col-md-10">
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label for="lastname" class="col-12 col-md-2 col-form-label">Last Name</label>
+                        <div class="col-12 col-md-10">
+                            <input class="form-control" type="text" id="lastname" name="lastname" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label class="col-12 col-md-2 col-form-label" for="telnum">Tel. No</label>
+                        <div class="col-5 col-md-3">
+                            <input id="areacode" name="areacode" class="form-control" type="tel" placeholder="Area Code">
+                        </div>
+                        <div class="col-7 col-md-7">
+                            <input id="telnum" name="telnum" class="form-control" type="tel" placeholder="Tel Number">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label class="col-md-2 col-form-label" for="emailid">Email Id</label>
+                        <!-- we can ignore writing col-12 again & again by just skipping it. It will do the same work. -->
+                        <div class="col-md-10">
+                            <input id="emailid" name="emailid" class="form-control" type="email" placeholder="Email Id">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-6 offset-md-2">
+                            <input class="form-check-label" id="approve" name="approve" type="checkbox">
+                            <label class="form-check-label" for="approve">
+                            <strong>May We Contact You</strong>
+                            </label>
+                        </div>
+                        <div class="col-md-3 offset-md-1">
+                            <select class="form-control">
+                                <option>Tel</option>
+                                <option>Email</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label class="col-md-2 col-form-label" for="textarea">Your Feedback</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" name="textarea" id="textarea" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn btn-primary">
+                                Send Feedback
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
              <div class="col-12 col-md">
             </div>
