@@ -52,7 +52,7 @@ gulp.task('copyfonts',function(){
 });
 
 gulp.task('imagemin',function(){
-    return gulp.src('./img/*.{jpg,png,gif}')
+    return gulp.src('./img/*.{jpg,png,gif,jpeg}')
     .pipe(imagemin({optimizationLevel: 3, progressive: true, interlaced: true}))
     .pipe(gulp.dest('./dist/img'));
 });
